@@ -1,4 +1,5 @@
-import javafx.scene.Scene;
+package PhysicsSimulatorApplication;
+
 import javafx.stage.Stage;
 
 public class Coordinator {
