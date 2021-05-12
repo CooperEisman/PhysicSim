@@ -1,12 +1,9 @@
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class Coordinator {
     //Instance
     private Stage primaryStage;
-    private Scene currentScene;
     private AppSettings settings;
 
     //Create Application
@@ -14,12 +11,10 @@ public class Coordinator {
         //Retrieve Primary Stage
         this.primaryStage = primaryStage;
 
-
-
         //Create Instance of Settings
         settings = new AppSettings();
-        System.out.println(settings.getScreenSizeX());
-        settings.setScreenSizeX(500);
-        System.out.println(settings.getScreenSizeX());
+
+        //Create Instance of View Controller
+        ViewCoordinator v = new ViewCoordinator(this.primaryStage, settings);
     }
 }
