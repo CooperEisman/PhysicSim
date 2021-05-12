@@ -13,7 +13,11 @@ public class main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Physics Simulator");
+        FrontendController f = new FrontendController();
+        f.init(primaryStage);
+
+
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
