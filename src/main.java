@@ -14,7 +14,7 @@ public class main extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Physics Simulator");
-        FrontendController f = new FrontendController();
+        Coordinator f = new Coordinator();
         f.init(primaryStage);
 
 
