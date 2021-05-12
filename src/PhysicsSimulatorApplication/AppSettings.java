@@ -25,7 +25,7 @@ public class AppSettings {
 
         //Setup Read Settings. Fail if unable to find it.
         try {
-            settingsFile = new File(currentPath + "\\src\\Settings\\app.settings");
+            settingsFile = new File(currentPath + "\\src\\PhysicsSimulatorApplication\\app.settings");
             settingsScanner = new Scanner(settingsFile);
 
         } catch (IOException e) {
